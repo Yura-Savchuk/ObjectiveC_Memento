@@ -13,6 +13,9 @@
 		52A533F32028D46F002D58A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A533F22028D46F002D58A8 /* Assets.xcassets */; };
 		52A533F62028D46F002D58A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A533F42028D46F002D58A8 /* LaunchScreen.storyboard */; };
 		52A533F92028D46F002D58A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A533F82028D46F002D58A8 /* main.m */; };
+		52A534032028DACD002D58A8 /* NoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A534022028DACD002D58A8 /* NoteEntity.m */; };
+		52A534062028DBBC002D58A8 /* NoteMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A534052028DBBC002D58A8 /* NoteMemento.m */; };
+		52A534092028E058002D58A8 /* NoteCreataker.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A534082028E058002D58A8 /* NoteCreataker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		52A533F52028D46F002D58A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52A533F72028D46F002D58A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A533F82028D46F002D58A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52A534012028DACD002D58A8 /* NoteEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteEntity.h; sourceTree = "<group>"; };
+		52A534022028DACD002D58A8 /* NoteEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteEntity.m; sourceTree = "<group>"; };
+		52A534042028DBBC002D58A8 /* NoteMemento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteMemento.h; sourceTree = "<group>"; };
+		52A534052028DBBC002D58A8 /* NoteMemento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteMemento.m; sourceTree = "<group>"; };
+		52A534072028E058002D58A8 /* NoteCreataker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteCreataker.h; sourceTree = "<group>"; };
+		52A534082028E058002D58A8 /* NoteCreataker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteCreataker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +67,7 @@
 		52A533E82028D46F002D58A8 /* Memento */ = {
 			isa = PBXGroup;
 			children = (
-				52A533E92028D46F002D58A8 /* AppDelegate.h */,
-				52A533EA2028D46F002D58A8 /* AppDelegate.m */,
-				52A533EC2028D46F002D58A8 /* ViewController.h */,
-				52A533ED2028D46F002D58A8 /* ViewController.m */,
+				52A533FF2028DA6A002D58A8 /* Classes */,
 				52A533EF2028D46F002D58A8 /* Main.storyboard */,
 				52A533F22028D46F002D58A8 /* Assets.xcassets */,
 				52A533F42028D46F002D58A8 /* LaunchScreen.storyboard */,
@@ -69,6 +75,31 @@
 				52A533F82028D46F002D58A8 /* main.m */,
 			);
 			path = Memento;
+			sourceTree = "<group>";
+		};
+		52A533FF2028DA6A002D58A8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52A533E92028D46F002D58A8 /* AppDelegate.h */,
+				52A533EA2028D46F002D58A8 /* AppDelegate.m */,
+				52A534002028DA82002D58A8 /* Note */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		52A534002028DA82002D58A8 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				52A533EC2028D46F002D58A8 /* ViewController.h */,
+				52A533ED2028D46F002D58A8 /* ViewController.m */,
+				52A534012028DACD002D58A8 /* NoteEntity.h */,
+				52A534022028DACD002D58A8 /* NoteEntity.m */,
+				52A534042028DBBC002D58A8 /* NoteMemento.h */,
+				52A534052028DBBC002D58A8 /* NoteMemento.m */,
+				52A534072028E058002D58A8 /* NoteCreataker.h */,
+				52A534082028E058002D58A8 /* NoteCreataker.m */,
+			);
+			path = Note;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +175,9 @@
 			files = (
 				52A533EE2028D46F002D58A8 /* ViewController.m in Sources */,
 				52A533F92028D46F002D58A8 /* main.m in Sources */,
+				52A534032028DACD002D58A8 /* NoteEntity.m in Sources */,
+				52A534062028DBBC002D58A8 /* NoteMemento.m in Sources */,
+				52A534092028E058002D58A8 /* NoteCreataker.m in Sources */,
 				52A533EB2028D46F002D58A8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA22H88P77;
 				INFOPLIST_FILE = Memento/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coulcod.Memento;
@@ -292,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BA22H88P77;
 				INFOPLIST_FILE = Memento/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = coulcod.Memento;
